@@ -1,0 +1,9 @@
+$start: 1;
+$end: 10;
+$multiplier: 100;
+
+@for $value from $start through $end {
+    .font-weight-#{$value * $multiplier} {
+        font-weight: $value * $multiplier;
+    }   
+}
