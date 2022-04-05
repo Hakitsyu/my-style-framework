@@ -4,27 +4,30 @@
         <title>My Style Framework - Styles</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="src/css/index.css">
+        <style>
+            .example-block {
+                height: 50px;
+                width: 50px;
+                display: block;
+                background-color: red;
+            }
+        </style>
     </head>
     <body>
-        <div>
-            The default font of the style is Poppins
-        </div>
-        <div>
-            <span class="font-weight-100">Font Weight 100</span>
-            <span class="font-weight-200">Font Weight 200</span>
-            <span class="font-weight-300">Font Weight 300</span>
-            <span class="font-weight-400">Font Weight 400</span>
-            <span class="font-weight-500">Font Weight 500</span>
-            <span class="font-weight-600">Font Weight 600</span>
-            <span class="font-weight-700">Font Weight 700</span>
-            <span class="font-weight-800">Font Weight 800</span>
-            <span class="font-weight-900">Font Weight 900</span>
-        </div>
-        <div>
-            <div class="d-flex">Display Flex</div>
-            <div class="d-block">Display Block</div>
-            <div class="d-none">Display None</div>
-            <div class="d-grid">Display Grid</div>
+        <div class="d-flex f-wrap"> 
+            <h1 class="no-spacing">Animations</h1>
+            <div class="d-flex f-wrap w-100">
+                <h2 class="w-100 no-spacing font-weight-500">Fade In</h2>
+                <div class="example-block fade-in"></div>
+            </div>
+            <div class="d-flex f-wrap w-100">
+                <h2 class="w-100 no-spacing font-weight-500">Width Increase</h2>
+                <div class="example-block width-increase"></div>
+            </div>
+            <div class="d-flex f-wrap w-100">
+                <h2 class="w-100 no-spacing font-weight-500">Fade Out</h2>
+                <div class="example-block fade-out"></div>
+            </div>
         </div>
     </body>
 </html>

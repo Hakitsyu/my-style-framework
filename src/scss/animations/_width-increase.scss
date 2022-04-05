@@ -1,0 +1,8 @@
+@keyframes width-increase {
+    0% { width: 0; }
+    100% { width: 100% }
+}
+
+.width-increase {
+    animation: 1s width-increase forwards;
+}

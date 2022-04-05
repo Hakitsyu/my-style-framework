@@ -2,5 +2,8 @@
   "name": "my-style-framework",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "sass-watch": "sass --watch src/scss/index.scss:src/css/index.css"
+  }
 }
