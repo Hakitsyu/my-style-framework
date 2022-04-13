@@ -1,0 +1,8 @@
+@keyframes height-increase {
+    0% { height: 0 }
+    100% { height: 100% }
+}
+
+.height-increase {
+    animation: 1s height-increase forwards;
+}
