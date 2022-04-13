@@ -1,0 +1,14 @@
+$colors: (
+    "primary": #AE6BFF,
+    "white": #ffffff
+);
+
+@each $tag, $hex in $colors {
+    .#{$tag}-color {
+        color: $hex;
+    }
+
+    .bg-#{$tag} {
+        background-color: $hex;
+    }
+}
