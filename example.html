@@ -5,15 +5,60 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="src/css/index.css">
         <style>
+            html, body {
+                margin: 0;
+                padding: 20px;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
             .example-block {
                 height: 50px;
                 width: 50px;
                 display: block;
-                background-color: red;
+                background-color: #AE6BFF;
+            }
+
+            * {
+                box-sizing: border-box;
             }
         </style>
     </head>
     <body>
+        <div class="d-flex f-wrap">
+            <h1 class="no-spacing">Buttons</h1>
+            <div class="d-flex f-wrap w-100">
+                <h2 class="w-100 no-spacing font-weight-500">Normal Button</h2>
+                <button class="button">Click Here</button>
+            </div>
+            <div class="d-flex f-wrap w-100">
+                <h2 class="w-100 no-spacing font-weight-500">Colored Button</h2>
+                <button class="button primary-button white-color">Click Here</button>
+            </div>
+            <div class="d-flex f-wrap w-100">
+                <h2 class="w-100 no-spacing font-weight-500">Small Button</h2>
+                <button class="button primary-button small-button white-color">Click Here</button>
+            </div>
+            <div class="d-flex f-wrap w-100">
+                <h2 class="w-100 no-spacing font-weight-500">Colored Button</h2>
+                <button class="button primary-button medium-button white-color">Click Here</button>
+            </div>
+            <div class="d-flex f-wrap w-100">
+                <h2 class="w-100 no-spacing font-weight-500">Colored Button</h2>
+                <button class="button primary-button large-button white-color">Click Here</button>
+            </div>
+        </div>
+        <div class="d-flex f-wrap">
+            <h1 class="no-spacing">Colors</h1>
+            <div class="d-flex f-wrap w-100">
+                <h2 class="w-100 no-spacing font-weight-500">Background</h2>
+                <div class="bg-primary white-color">Hello World</div>
+            </div>
+            <div class="d-flex f-wrap w-100">
+                <h2 class="w-100 no-spacing font-weight-500">Text Color</h2>
+                <div class="primary-color">My custom text~~</div>
+            </div>
+        </div>
         <div class="d-flex f-wrap"> 
             <h1 class="no-spacing">Animations</h1>
             <div class="d-flex f-wrap w-100">
@@ -21,12 +66,16 @@
                 <div class="example-block fade-in"></div>
             </div>
             <div class="d-flex f-wrap w-100">
+                <h2 class="w-100 no-spacing font-weight-500">Fade Out</h2>
+                <div class="example-block fade-out"></div>
+            </div>
+            <div class="d-flex f-wrap w-100">
                 <h2 class="w-100 no-spacing font-weight-500">Width Increase</h2>
                 <div class="example-block width-increase"></div>
             </div>
             <div class="d-flex f-wrap w-100">
-                <h2 class="w-100 no-spacing font-weight-500">Fade Out</h2>
-                <div class="example-block fade-out"></div>
+                <h2 class="w-100 no-spacing font-weight-500">Height Increase</h2>
+                <div class="example-block height-increase"></div>
             </div>
         </div>
     </body>
